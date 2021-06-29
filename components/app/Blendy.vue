@@ -1,0 +1,101 @@
+<template>
+  <div class="fixed top-0 left-0 w-full min-h-screen">
+    <div
+      class="
+        h-full
+        flex
+        items-center
+        justify-center
+        w-full
+        absolute
+        top-0
+        left-0
+        z-0
+      "
+    >
+      <div
+        class="
+          absolute
+          top-11
+          left-3
+          w-44
+          h-44
+          sm:w-60
+          sm:h-60
+          md:w-72
+          md:h-72
+          bg-gradient-to-tr
+          from-sky-400
+          via-cyan-500
+          to-emerald-700
+          rounded-full
+          transition-all
+          duration-150
+          mix-blend-multiply
+          filter
+          blur-xl
+          opacity-50
+        "
+      ></div>
+
+      <div
+        class="
+          absolute
+          top-20
+          right-3
+          w-44
+          h-44
+          sm:w-60
+          sm:h-60
+          md:w-72
+          md:h-72
+          bg-gradient-to-tr
+          from-yellow-400
+          via-amber-500
+          to-rose-700
+          rounded-full
+          transition-all
+          duration-150
+          mix-blend-multiply
+          filter
+          blur-xl
+          opacity-50
+        "
+      >
+        <!-- animate-blob -->
+      </div>
+
+      <div
+        class="
+          absolute
+          bottom-12
+          left-30
+          w-44
+          h-44
+          sm:w-60
+          sm:h-60
+          md:w-72
+          md:h-72
+          bg-gradient-to-bl
+          from-violet-400
+          via-rose-400
+          to-rose-700
+          rounded-full
+          transition-all
+          duration-150
+          mix-blend-multiply
+          filter
+          blur-xl
+          opacity-50
+        "
+      ></div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {};
+</script>
+
+<style>
+</style>

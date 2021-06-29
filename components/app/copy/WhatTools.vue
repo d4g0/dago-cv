@@ -1,7 +1,7 @@
 <template>
   <div class="mb-16">
     <div class="">
-      <h2 class="text-3xl font-bold">What tools do I use ?</h2>
+      <h2 class="text-3xl font-bold">What tools do <br class="sm:hidden"> I use ?</h2>
       <ToolsIconList class="mt-8" />
       <div class="mt-8 font-medium space-y-4">
         <p>

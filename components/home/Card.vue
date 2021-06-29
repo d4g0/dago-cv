@@ -1,12 +1,18 @@
 <template>
-  <div class="w-full h-full relative z-30 top-0 left-0">
-    <div class="mt-20 max-w-2xl mx-auto rounded-xl shadow-xl mb-20">
+  <div class="w-full h-full relative z-30 top-0 left-0 pt-20">
+    <div
+      class="
+        max-w-2xl
+        mx-auto
+        rounded-xl
+        overflow-y-hidden
+        shadow-xl
+        mb-20
+      "
+    >
+      <!-- banner -->
       <div
         class="
-          sticky
-          z-50
-          top-0
-          left-0
           w-full
           pt-10
           px-10
@@ -30,7 +36,7 @@
             class="w-20 h-20 rounded-full shadow-md"
           />
         </div>
-        <div>
+        <div class="mt-2 sm:mt-0">
           <ul class="relative">
             <li class="-ml-2">
               <a
@@ -74,6 +80,7 @@
           </div>
         </div>
       </div>
+      <!-- body -->
       <div
         class="
           w-full
@@ -94,6 +101,7 @@
             of Information Engineering Sciences
           </p>
         </div>
+
         <WhatDoIDo />
         <WhatTools />
         <WhatHaveIDone />

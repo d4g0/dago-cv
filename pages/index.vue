@@ -64,7 +64,7 @@ export default {
       {
         hid: 'twitter:image',
         name: 'twitter:image',
-        content: ''
+        content: 'https://dago-cv.netlify.app/img/dago-web-development-services.jpg'
       }
       ],
       link: [

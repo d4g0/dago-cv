@@ -12,6 +12,7 @@
       focus:border-transparent
       rounded-xl
       border
+      border-opacity-40
       hover:bg-gray-100
       dark:hover:bg-gray-800
       transform

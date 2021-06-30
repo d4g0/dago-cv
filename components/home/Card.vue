@@ -17,17 +17,7 @@
       "
     >
       <!-- banner -->
-      <div
-        class="
-          w-full
-          pt-10
-          px-10
-          lg:px-12
-          lg:pt-12
-          pb-8
-          
-        "
-      >
+      <div class="w-full pt-10 px-10 lg:px-12 lg:pt-12 pb-8">
         <div class="w-full flex justify-between items-center">
           <h1 class="text-4xl font-bold filter">Hey, im Dago</h1>
           <img
@@ -83,20 +73,11 @@
         </div>
       </div>
       <!-- body -->
-      <div
-        class="
-          w-full
-          px-10
-          lg:px-12
-          pb-10
-          lg:pb-12
-          
-        "
-      >
+      <div class="w-full px-10 lg:px-12 pb-10 lg:pb-12">
         <div class="mb-16">
           <p class="font-medium opacity-75">
-            I'm a 25 years old web developer. Currently finishing the third year
-            of Information Engineering Sciences
+            I'm a web developer mainly focused on frontend, also I'm a Software
+            Engineering student at college.
           </p>
         </div>
 

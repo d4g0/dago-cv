@@ -8,14 +8,13 @@
             I can develop, deploy and maintain blazing fast websites. Build from
             the grown up to ship an unique product, tailored to your needs,
             designed to be performant and accessible, to give a delightful
-            experience to your final users.
+            experience to your final users. 
           </p>
         </li>
         <li>
           <p>
-            I'm ready to bring into life your design with pixel perfect
-            precision, also, will be happy to create those for you if you need
-            to.
+            I'm ready to bring your design into life with a perfect pixel precision, 
+            and if you need to I will be happy to create it for you.
           </p>
         </li>
         <li>

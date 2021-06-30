@@ -3,8 +3,8 @@
     <h2 class="text-3xl font-bold">What have I done ?</h2>
     <p class="mt-8 font-medium space-y-4">
       <span class="opacity-75">
-        I seriously started to study and develop the web when Corona hit us
-        hard, back early 2020. Since that time I have been making a ton of
+        I started to sharpen my web development skills back early 2020, learning
+        and studying everyday. Since that time I have started to make a lot of
       </span>
       <a
         href="https://github.com/d4g0?tab=repositories"
@@ -114,8 +114,7 @@
             v-if="isDark"
             src="/img/railab-website-preview-dark.png"
             alt="Railab.tech website preview"
-            class="
-            "
+            class=""
           />
         </a>
       </div>

@@ -6,8 +6,7 @@
       <div class="mt-8 font-medium space-y-4">
         <p>
           <span class="opacity-75">
-            We are not in 2010 any more, I'm happy to say that cutting edge tech
-            is where I live. Mostly use
+            I proudly could say that cutting edge tech is where I live. I  mostly use
           </span>
           <a
             href="https://v3.vuejs.org/"
@@ -25,10 +24,10 @@
             >Nuxt.js</a
           >
           <span class="opacity-75">
-            to create from single page applications, to server side rendered
-            ones, passing by the Jam Stack street too. I really enjoy working
-            with those tools, they bring endless possibilities to craft;
-            headless content managed systems like
+            for creating from single page applications, to server side rendered
+            based applications, passing by the Jam Stack street too. I really enjoy working
+            with those tools, it bring me endless possibilities for website crafting.
+            I've also worked with headless content management systems like 
           </span>
           <a
             href="https://www.storyblok.com/?utm_source=elbrujo&utm_medium=twitter&utm_campaign=elbrujolegal-likes-storyblok"
@@ -39,8 +38,8 @@
             Storyblok
           </a>
           <span class="opacity-75">
-            , or custom APIs to consume content, as a fully static approach
-            nurtured by these two using Jam Stack environments like
+            , with custom APIs, or a fully static approach
+            powered by Jam Stack and deployed on cloud environments like
           </span>
           <a href="https://www.netlify.com/" rel="noopener" class="link">
             Netlify

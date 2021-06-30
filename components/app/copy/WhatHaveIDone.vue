@@ -111,19 +111,10 @@
             class=""
           />
           <img
-            v-else
+            v-if="isDark"
             src="/img/railab-website-preview-dark.png"
             alt="Railab.tech website preview"
             class="
-              hover:scale-110
-              absolute
-              top-0
-              left-0
-              w-full
-              h-full
-              object-cover
-              transition-all
-              duration-300
             "
           />
         </a>
@@ -155,7 +146,6 @@
             href="https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Frailab.tech%2F"
           >
             <img
-              v-if="!isDark"
               src="/img/railab.tech-page-speed-insigths-2.png"
               alt="railab.tech performance metrics in page speed insights"
               class=""

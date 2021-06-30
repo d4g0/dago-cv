@@ -6,5 +6,126 @@
             hover:bg-teal-100
             dark:hover:bg-teal-800
             focus:outline-none
-            focus:ring-2 focus:ring-amber-500;
+            focus:ring-2 focus:ring-teal-400
+            dark:focus:ring-teal-600;
+}
+
+.input {
+  @apply w-full
+  bg-surface-light
+  dark:bg-surface-dark
+  px-2
+  py-2
+  rounded-md
+  border-teal-400
+  dark:border-teal-600
+  border-2
+  focus:outline-none
+  focus:ring-2
+  focus:ring-teal-400
+  dark:focus:ring-teal-600;
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* transitions */
+
+/* fade */
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.25s;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+
+
+
+/* fade-from-up */
+
+.fade-from-up-enter-active,
+.fade-from-up-leave-active {
+  transition: all 0.25s;
+}
+
+.fade-from-up-enter,
+.fade-from-up-leave-to {
+  opacity: 0;
+  transform: translate3d(0, -3rem, 0);
+}
+
+/* fade-from-bottom */
+
+.fade-from-bottom-enter-active,
+.fade-from-bottom-leave-active {
+  transition: all 0.25s;
+}
+
+.fade-from-bottom-enter,
+.fade-from-bottom-leave-to {
+  opacity: 0;
+  transform: translate3d(0, 2rem, 0);
+}
+
+/* fade-from-left */
+
+.fade-from-left-enter-active,
+.fade-from-left-leave-active {
+  transition: all 0.25s;
+}
+
+.fade-from-left-enter,
+.fade-from-left-leave-to {
+  opacity: 0;
+  transform: translate3d(-5rem, 0rem, 0);
+}
+
+/* PAGE */
+
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.3s;
+}
+
+.page-enter,
+.page-leave-to {
+  opacity: 0;
+}
+
+/* Layout */
+
+.layout-enter-active,
+.layout-leave-active {
+  transition: all 0.3s;
+}
+
+.layout-enter,
+.layout-leave-active {
+  opacity: 0;
+}
+
+/* IOS INPPUTs SHADOW RESET */
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+  -webkit-appearance: none;
+}
+
+.blured-5 {
+  backdrop-filter: blur(10px);
+}
+
+/* custom clases */
+
+.nuxt-link-exact-active {
+  @apply text-opacity-100  dark:text-opacity-100  font-semibold;
 }

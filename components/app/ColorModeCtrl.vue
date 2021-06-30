@@ -7,7 +7,9 @@
       py-2
       px-2
       focus:outline-none
-      focus:ring-2 focus:ring-amber-500
+      focus:ring-2 focus:ring-teal-400
+      dark:focus:ring-teal-600
+      focus:border-transparent
       rounded-xl
       border
       hover:bg-gray-100

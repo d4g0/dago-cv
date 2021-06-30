@@ -8,6 +8,12 @@
         overflow-y-hidden
         shadow-xl
         mb-20
+        bg-white bg-opacity-75
+        dark:bg-surface-dark-elevated dark:bg-opacity-75
+        transition-all
+        duration-150
+        filter
+        backdrop-blur-xl
       "
     >
       <!-- banner -->
@@ -19,13 +25,7 @@
           lg:px-12
           lg:pt-12
           pb-8
-          bg-white bg-opacity-75
-          dark:bg-surface-dark-elevated dark:bg-opacity-75
-          transition-all
-          duration-150
-          filter
-          backdrop-blur-xl
-          rounded-t-xl
+          
         "
       >
         <div class="w-full flex justify-between items-center">
@@ -51,7 +51,8 @@
                   hover:bg-teal-100
                   dark:hover:bg-teal-800
                   focus:outline-none
-                  focus:ring-2 focus:ring-amber-500
+                  focus:ring-2 focus:ring-teal-400
+                  dark:focus:ring-teal-600;
                 "
                 >tocarralero@gmail.com</a
               >
@@ -69,7 +70,8 @@
                   hover:bg-teal-100
                   dark:hover:bg-teal-800
                   focus:outline-none
-                  focus:ring-2 focus:ring-amber-500
+                  focus:ring-2 focus:ring-teal-400
+                  dark:focus:ring-teal-600;
                 "
                 >GitHub</a
               >
@@ -88,11 +90,7 @@
           lg:px-12
           pb-10
           lg:pb-12
-          bg-white bg-opacity-75
-          dark:bg-surface-dark-elevated dark:bg-opacity-75
-          transition-all
-          duration-150
-          rounded-b-xl
+          
         "
       >
         <div class="mb-16">
@@ -105,6 +103,7 @@
         <WhatDoIDo />
         <WhatTools />
         <WhatHaveIDone />
+        <ContactForm />
       </div>
     </div>
   </div>
@@ -115,8 +114,15 @@ import ColorModeCtrl from "~/components/app/ColorModeCtrl.vue";
 import WhatDoIDo from "~/components/app/copy/WhatCanIDo.vue";
 import WhatTools from "~/components/app/copy/WhatTools.vue";
 import WhatHaveIDone from "~/components/app/copy/WhatHaveIDone.vue";
+import ContactForm from "./ContactForm.vue";
 export default {
-  components: { ColorModeCtrl, WhatDoIDo, WhatTools, WhatHaveIDone },
+  components: {
+    ColorModeCtrl,
+    WhatDoIDo,
+    WhatTools,
+    WhatHaveIDone,
+    ContactForm,
+  },
 };
 </script>
 

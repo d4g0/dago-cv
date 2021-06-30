@@ -29,7 +29,7 @@ export default {
           name: "description",
           content: "Web Development Services",
         },
-        { hid: "og:title", property: "og:title", content: "Railab" },
+        { hid: "og:title", property: "og:title", content: "Dago Web Services" },
         {
           hid: "og:site_name",
           property: "og:site_name",

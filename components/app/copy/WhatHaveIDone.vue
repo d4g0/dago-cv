@@ -86,11 +86,106 @@
       </a>
       <span class="opacity-75"> here and there. </span>
     </p>
+    <!-- railab -->
+    <div>
+      <h3 class="mt-16 text-xl font-bold">Railab.tech</h3>
+      <div
+        class="
+          mt-8
+          w-full
+          mx-auto
+          shadow-xl
+          rounded-md
+          hover:shadow-2xl
+          transition-all
+          duration-300
+          overflow-hidden
+          relative
+        "
+      >
+        <a href="https://railab.tech">
+          <img
+            v-if="!isDark"
+            src="/img/railab-website-preview.png"
+            alt="Railab.tech website preview"
+            class=""
+          />
+          <img
+            v-else
+            src="/img/railab-website-preview-dark.png"
+            alt="Railab.tech website preview"
+            class="
+              hover:scale-110
+              absolute
+              top-0
+              left-0
+              w-full
+              h-full
+              object-cover
+              transition-all
+              duration-300
+            "
+          />
+        </a>
+      </div>
+      <div class="flex items-center justify-center mt-4">
+        <figcaption class="text-sm opacity-80 font-medium">
+          <a href="https://railab.tech" class="link"> railab.tech </a>
+          preview
+        </figcaption>
+      </div>
+
+      <div>
+        <h4 class="mt-16 font-bold">Page Speed Insights</h4>
+        <div
+          class="
+            mt-8
+            w-full
+            mx-auto
+            shadow-xl
+            rounded-md
+            hover:shadow-2xl
+            transition-all
+            duration-300
+            overflow-hidden
+            relative
+          "
+        >
+          <a
+            href="https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Frailab.tech%2F"
+          >
+            <img
+              v-if="!isDark"
+              src="/img/railab.tech-page-speed-insigths-2.png"
+              alt="railab.tech performance metrics in page speed insights"
+              class=""
+          /></a>
+        </div>
+        <div class="flex items-center justify-center mt-4">
+          <figcaption class="text-sm opacity-80 font-medium">
+            Perfromance
+            <a
+              href="https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Frailab.tech%2F"
+              class="link"
+            >
+              metrics
+            </a>
+            by Google Page Speed Insights
+          </figcaption>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  computed: {
+    isDark() {
+      return this.$colorMode.value == "dark";
+    },
+  },
+};
 </script>
 
 <style>

@@ -103,7 +103,7 @@
         <WhatDoIDo />
         <WhatTools />
         <WhatHaveIDone />
-        <ContactForm />
+        <!-- <ContactForm /> -->
       </div>
     </div>
   </div>
@@ -121,7 +121,7 @@ export default {
     WhatDoIDo,
     WhatTools,
     WhatHaveIDone,
-    ContactForm,
+    // ContactForm,
   },
 };
 </script>

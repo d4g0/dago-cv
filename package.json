@@ -6,7 +6,7 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate --modern"
   },
   "dependencies": {
     "@vue/composition-api": "^1.0.0-rc.12",

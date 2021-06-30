@@ -60,7 +60,7 @@
           <div class="relative">
             <transition name="fade-from-bottom">
               <p
-                v-if="sendError"
+                v-show="sendError"
                 class="
                   absolute
                   w-full

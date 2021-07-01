@@ -8,6 +8,7 @@
           netlify
           class="mt-8 space-y-4"
           ref="contactForm"
+          method="POST"
         >
           <div class="w-full">
             <label for="email" class="sr-only">Name</label>

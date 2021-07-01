@@ -81,10 +81,10 @@
           </p>
         </div>
 
-        <WhatDoIDo />
-        <WhatTools />
+        <!-- <WhatDoIDo />
+        <WhatTools /> -->
         <WhatHaveIDone />
-        <!-- <ContactForm /> -->
+        <ContactForm />
       </div>
     </div>
   </div>

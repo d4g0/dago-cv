@@ -65,15 +65,15 @@
                 shadow-md
                 hover:shadow-lg
                 text-white
-                bg-indigo-600
-                dark:bg-indigo-700
-                hover:bg-indigo-700
-                dark:hover:bg-indigo-800
+                bg-teal-600
+                dark:bg-teal-700
+                hover:bg-teal-700
+                dark:hover:bg-teal-800
                 transition-all
                 duration-150
                 focus:outline-none
-                focus:ring-4 focus:ring-indigo-900
-                dark:focus:ring-indigo-400
+                focus:ring-4 focus:ring-teal-400
+                dark:focus:ring-teal-500
                 disable:opacity-70
               "
               :class="isSending ? 'opacity-70' : ''"

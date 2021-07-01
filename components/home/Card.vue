@@ -83,7 +83,7 @@
 
         <!-- <WhatDoIDo />
         <WhatTools /> -->
-        <WhatHaveIDone />
+        <!-- <WhatHaveIDone /> -->
         <ContactForm />
       </div>
     </div>
@@ -102,7 +102,7 @@ export default {
     WhatDoIDo,
     WhatTools,
     WhatHaveIDone,
-    // ContactForm,
+    ContactForm,
   },
 };
 </script>

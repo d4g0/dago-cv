@@ -155,13 +155,6 @@ export default {
   },
   methods: {
     async handleSubmit(evt) {
-      console.log({
-        data: this.encode({
-          "form-name": "contact-form",
-          name: this.email,
-          message: this.message,
-        }),
-      });
       try {
         const res = await fetch("/contact-form", {
           method: "POST",

@@ -9,6 +9,7 @@
           class="mt-8 space-y-4"
           ref="contactForm"
           method="POST"
+          name="contact-form"
         >
           <div class="w-full">
             <label for="email" class="sr-only">Name</label>
@@ -18,6 +19,7 @@
               placeholder="Email"
               class="input"
               required
+              v-model="email"
             />
           </div>
           <div class="w-full">
@@ -27,6 +29,7 @@
               placeholder="Message"
               class="input"
               required
+              v-model="message"
             ></textarea>
           </div>
           <div class="">
@@ -109,20 +112,28 @@ export default {
       isSended: false,
       isSending: false,
       sendError: false,
+      email: "",
+      message: "",
     };
   },
   methods: {
-    async handleSubmit() {
-      let formData = new FormData(this.$refs.contactFrom);
+    async handleSubmit(evt) {
       console.log({
-        rawData: formData,
-        data: new URLSearchParams(formData).toString(),
+        data: this.encode({
+            "form-name": "contact-form",
+            name: this.email,
+            message: this.message,
+          }),
       });
       try {
         const res = await fetch("/contact-form", {
           method: "POST",
           headers: { "Content-Type": "application/x-www-form-urlencoded" },
-          body: new URLSearchParams(formData).toString(),
+          body: this.encode({
+            "form-name": "contact-form",
+            name: this.email,
+            message: this.message,
+          }),
         });
 
         if (res.ok) {
@@ -138,17 +149,23 @@ export default {
       console.log("(cf) success");
       this.isSending = false;
       this.isSended = true;
-
     },
     handleError() {
       console.log("(cf) error");
       this.isSending = false;
       this.sendError = true;
 
-      const TID = setTimeout(()=>{
+      const TID = setTimeout(() => {
         clearTimeout(TID);
         this.sendError = false;
-      },5e3)
+      }, 5e3);
+    },
+    encode(data) {
+      return Object.keys(data)
+        .map(
+          (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+        )
+        .join("&");
     },
   },
 };

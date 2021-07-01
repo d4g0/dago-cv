@@ -13,9 +13,27 @@
           v-if="showForm"
         >
           <input type="hidden" name="contact-form" value="name_of_my_form" />
+          <input
+            name="bot-field"
+            class="hidden"
+            type="text"
+            v-model="botField"
+          />
 
           <div class="w-full">
-            <label for="email" class="sr-only">Name</label>
+            <label for="name" class="sr-only">Name</label>
+            <input
+              type="text"
+              name="name"
+              placeholder="Name"
+              class="input"
+              required
+              v-model="name"
+            />
+          </div>
+
+          <div class="w-full">
+            <label for="email" class="sr-only">Email</label>
             <input
               type="email"
               name="email"
@@ -106,7 +124,14 @@
       </transition>
     </div>
     <div class="hidden">
-      <form method="POST" name="contact-form" data-netlify="true">
+      <form
+        method="POST"
+        name="contact-form"
+        data-netlify="true"
+        netlify-honeypot="bot-field"
+      >
+        <input name="bot-field" type="text" />
+        <input type="text" name="name" />
         <input type="email" name="email" />
         <textarea name="message"></textarea>
       </form>
@@ -121,9 +146,11 @@ export default {
       isSended: false,
       isSending: false,
       sendError: false,
+      name:'',
       email: "",
       message: "",
       showForm: false,
+      botField: "",
     };
   },
   methods: {
@@ -141,8 +168,10 @@ export default {
           headers: { "Content-Type": "application/x-www-form-urlencoded" },
           body: this.encode({
             "form-name": "contact-form",
-            name: this.email,
+            name: this.name,
+            email: this.email,
             message: this.message,
+            botField: this.botField,
           }),
         });
 
@@ -182,8 +211,8 @@ export default {
     await new Promise((resolve) => {
       setTimeout(resolve, 1e3);
     });
-    console.log('now form will be rendered')
-    this.showForm = true
+    console.log("now form will be rendered");
+    this.showForm = true;
   },
 };
 </script>

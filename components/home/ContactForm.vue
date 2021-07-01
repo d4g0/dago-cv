@@ -10,7 +10,10 @@
           ref="contactForm"
           method="POST"
           name="contact-form"
+          v-if="showForm"
         >
+          <input type="hidden" name="contact-form" value="name_of_my_form" />
+
           <div class="w-full">
             <label for="email" class="sr-only">Name</label>
             <input
@@ -102,6 +105,12 @@
         </div>
       </transition>
     </div>
+    <div class="hidden">
+      <form method="POST" name="contact-form" data-netlify="true">
+        <input type="email" name="email" />
+        <textarea name="message"></textarea>
+      </form>
+    </div>
   </div>
 </template>
 
@@ -114,16 +123,17 @@ export default {
       sendError: false,
       email: "",
       message: "",
+      showForm: false,
     };
   },
   methods: {
     async handleSubmit(evt) {
       console.log({
         data: this.encode({
-            "form-name": "contact-form",
-            name: this.email,
-            message: this.message,
-          }),
+          "form-name": "contact-form",
+          name: this.email,
+          message: this.message,
+        }),
       });
       try {
         const res = await fetch("/contact-form", {
@@ -167,6 +177,13 @@ export default {
         )
         .join("&");
     },
+  },
+  async mounted() {
+    await new Promise((resolve) => {
+      setTimeout(resolve, 1e3);
+    });
+    console.log('now form will be rendered')
+    this.showForm = true
   },
 };
 </script>
